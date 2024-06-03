@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //Log.v("DEMO", "Main.onCreate wird ausgeführt")
 
         sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
 
@@ -50,12 +51,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         savedValue = sharedPreferences.getString("value", "").toString()
         resultTv.text = "Gespeicherter Wert: $savedValue"
 
-        Log.v("DEMO", "onResume wird ausgeführt")
+        Log.v("DEMO", "Main.onResume wird ausgeführt")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.v("DEMO", "onPause wird ausgeführt")
+        Log.v("DEMO", "Main.onPause wird ausgeführt")
     }
 
 
@@ -66,7 +67,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
             R.id.btn_add ->{
                 val intent = Intent(this,AddAct::class.java)
                 startActivity(intent)
-                Log.v("DEMO","onClick addButton aufgerufen")
+                Log.v("DEMO","Main.onClick addButton aufgerufen")
             }
             R.id.btn_stats ->{
                 //result = b
