@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         btnStats.setOnClickListener(this)
         btnShare.setOnClickListener(this)
 
-        resultTv.text = "Gespeicherter Wert: $savedValue"
+        //resultTv.text = "Gespeicherter Wert: $savedValue"
         }
 
     override fun onResume() {
@@ -62,7 +62,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
 
     override fun onClick(v: View?) {
         clause.text = "Dankeschön"
-        var result = 0.0
         when(v?.id){
             R.id.btn_add ->{
                 val intent = Intent(this,AddAct::class.java)

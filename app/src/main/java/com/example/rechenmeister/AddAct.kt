@@ -1,7 +1,6 @@
 package com.example.rechenmeister
 
 import android.content.Context
-import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
@@ -33,9 +32,9 @@ class AddAct : AppCompatActivity(), View.OnClickListener{
         btnPerson = findViewById(R.id.btn_person)
 
         btnConfirm.setOnClickListener {
-            val value = inputBetrag
-            saveValue(value.toString().toFloat())
-            //finish() // Zurück zur vorherigen Activity
+            val value = inputBetrag.text
+            saveValue(value.toString())
+            finish() // Zurück zur vorherigen Activity
             Log.v("DEMO","onClickListener aufgerufen mit Wert $value")
         }
         //btnPerson.text = "Nana"
@@ -63,9 +62,9 @@ class AddAct : AppCompatActivity(), View.OnClickListener{
         }*/
     }
 
-    private fun saveValue(value: Float){
+    private fun saveValue(value: String){
         val editor = sharedPreferences.edit()
-        editor.putFloat("value",value)
+        editor.putString("value",value)
         editor.apply()
     }
 }
