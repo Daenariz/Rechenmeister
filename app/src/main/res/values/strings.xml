@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rechenmeister</string>
+    <string name="clause">Rechenmeister stets zu Ihren Diensten</string>
+    <string name="btn_add">Hinzufügen</string>
+    <string name="btn_stats">Statistik</string>
+    <string name="btn_share">Teilen</string>
+    <string name="input_hint">Bitte Betrag eingeben</string>
+    <string name="btn_confirm">Bestätigen</string>
+    <string name="btn_person1">Nana</string>
+    <string name="btn_person2">Deniz</string>
+    <string name="btn_bar">Barzahlung</string>
+    <string name="btn_card">Kartenzahlung</string>
+
+</resources>
